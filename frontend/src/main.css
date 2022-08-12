@@ -1,0 +1,756 @@
+@font-face {
+  font-family: 'FF Clan OT Medium';
+  src: url("./FF\ Clan\ OT\ Medium.otf");
+}
+@font-face {
+  font-family: 'FF Clan OT Book';
+  src: url("./FF\ Clan\ OT\ Book.otf");
+}
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'FF Clan OT Medium';
+}
+
+.container {
+  width: calc(100% - 120px);
+  margin-left: auto;
+  font-family: 'FF Clan OT Medium';
+
+}
+
+.container-fluid{
+  font-family: 'FF Clan OT Book';
+}
+
+.container table {
+  font-family: 'FF Clan OT Book';
+}
+header .logo h1 {
+  font-weight: 300;
+  font-family: 'FF Clan OT Medium';
+}
+
+header .logo h1 span {
+  color: #06c167;
+  font-weight: 600;
+  
+}
+
+.logo h1 {
+  font-weight: 300;
+  
+}
+
+.logo h1 span {
+  color: #06c167;
+  font-weight: 600;
+  
+}
+
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ .searchBar {
+  margin-left: auto;
+}
+
+.menu-bars{
+  /*margin-left: 2rem;*/
+  font-size: 2rem;
+  color: black;
+  /*background-color: white;*/
+
+}
+
+.menu-bars-close{
+  margin-left: 10rem;
+  font-size: 2rem;
+  color: black;
+}
+.menu-bars:hover{
+  color: black;
+}
+
+.nav-menu{
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  list-style: none;
+}
+.nav-menu .nav-menu-items{
+  list-style: none;
+
+}
+
+.nav-menu-items li{
+  margin-top: 1rem;
+}
+
+.nav-menu-items p{
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav-menu-items span{
+  margin-left: 1rem;
+  
+}
+.nav-menu.active{
+  left: 0;
+  transition: 350ms;
+  list-style: none;
+}
+ .nav-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+  font-family: 'FF Clan OT Medium';
+}
+
+.nav-text a{
+   color: black;
+   text-decoration: none;
+}
+
+.nav-text a:hover{
+  color: black;
+}
+ .nav-text button{
+  color:white;
+  background-color: black;
+  border-color: black;
+  border: black;
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+ .nav-text button:hover{
+  background-color: #383837;
+  border-color: #383837;
+  border: black;
+}
+
+ .nav-text button:focus{
+  background-color: #383837;
+  border-color: #383837;
+  border: black;
+}
+
+ .navbar-toggle{
+  background-color: white;
+  width: 100%;
+  justify-content: start;
+}
+
+/*
+header .header-option {
+  font-family: 'Uber Move Text';
+  padding: 2vh;
+  margin: 2vh;
+  font-size: 1.2rem;
+  background-color: #f0f0f0;
+  color: black;
+  border-radius: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ .header-sign-in-button{
+  text-decoration: none !important; 
+}
+
+header .header-option svg {
+  margin-right: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+header .currentDetails,
+header .searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+*/
+
+.header{
+  margin: 25px;
+}
+.header-location{
+   border-radius: 2em;
+   height: 50px;
+   background-color: #f0f0f0;
+   border: none;
+  border-color: transparent;
+  padding: 5px;
+  margin-right: 1.5rem;
+  font-family: 'FF Clan OT Medium';
+}
+
+.header-location-after {
+  border-radius: 2em;
+  padding: 10px;
+  height: 50px;
+   background-color: #f0f0f0;
+   border: none;
+   outline: none;
+  border-color: transparent;
+}
+
+.header-search{
+  height: 50px;
+  background-color: #f0f0f0;
+  border: none;
+ border-color: transparent;
+ padding: 10px;
+ margin-right: 1.5rem;
+ color: black;
+ font-family: 'FF Clan OT Medium';
+}
+
+.header-search-after {
+ border-radius: 1em;
+ padding: 5px;
+  background-color: #f0f0f0;
+  border: none;
+  outline: none;
+ border-color: transparent;
+}
+
+.header-signIn{
+  height: 50px;
+  border-radius: 1.5em;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  border: none;
+ border-color: transparent;
+ padding: 10px;
+ font-size: 1.2rem;
+ margin-right: 1.5rem;
+ color: black;
+ font-family: 'FF Clan OT Medium';
+}
+
+.rest-details{
+  width: 100%;
+  height: 50vh;
+}
+
+.cartbutton{
+  border-radius: 2em;
+  width: 60%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: black;
+  color: white;
+}
+.menuItemCard{
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #f0f0f0;
+ 
+  
+}
+
+.menuItemCard img{
+  width: 100%;
+  height: fit-content;
+}
+.menuItemCard h5 {
+  font-family: 'FF Clan OT Medium';
+}
+
+.menuItemModal-img{
+  width: 10%;
+  height: fit-content;
+}
+
+.menuItemCard p{
+  line-height: 2em;
+    height: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: 'FF Clan OT Book';
+}
+
+.menuItemModal{
+  border-style: none;
+  border-width: 0.5px;
+  border-color: #f0f0f0;
+}
+
+.menuItemModal img{
+  width: 100%;
+  height: fit-content;
+}
+
+.menuItemModal button{
+  background-color: #f0f0f0; /* Green */
+  border: none;
+  color: #afafaf;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bolder;
+  margin: 1px 1px;
+  cursor: pointer;
+ border-radius: 50%;
+}
+
+.menuItemModal input{
+  
+  border: none;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1px 1px;
+  cursor: pointer;
+  width:100%
+}
+
+
+
+.menuItemModal p{
+  color: #545454;
+}
+.img-responsive {
+  width: 28vh;
+  height: 20vh;
+}
+.rest-card{
+  text-transform: capitalize;
+  text-decoration: none !important;
+  color: black;
+  
+}
+
+.rest-card img{
+  width: 100%;
+}
+
+/*.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+.rest-card img:hover .overlay{
+  opacity: 1;
+}
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}*/
+
+.rest-card p{
+  margin-top: 1.2rem;
+  text-decoration: none;
+  color: black;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  font-family: 'FF Clan OT Medium';
+  
+  
+}
+.rest-card .rating{
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.userImg{
+  height: inherit;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.userImg-enlarged{
+  height: 8rem;
+  width: 8rem;
+  padding: unset;
+  margin: unset;
+  border-radius: 50%;
+}
+
+.input-border{
+  width: 80% !important;
+}
+
+.update-profile{
+  margin: 2rem;
+  font-family: 'FF Clan OT Book';
+}
+
+
+.update-profile input{
+  font-family: 'FF Clan OT Book' !important;
+}
+
+.update-profile label{
+  font-family: 'FF Clan OT Medium' !important;
+}
+
+
+.update-profile-button{
+  display: flex;
+  justify-content: center;
+  font-family: 'FF Clan OT Medium' !important;
+}
+
+.adminHomePageMessage{
+    margin:  2rem;
+}
+
+.adminHomePageMessage .card{
+  margin:  2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ubereats-card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.ubereats-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.ubereats-card .body {
+  padding: 2rem;
+}
+.ubereats-card img{
+  width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+.ubereats-card .body button{
+  align-self: center;
+}
+
+.menu-add-item-button{
+  display: flex;
+  justify-content: end;
+}
+
+footer{
+  /*font-family: 'Uber Move Text';*/
+  padding: 5vh;
+  background-color: black;
+
+
+}
+footer .logo h2 {
+  
+  color: white;
+  font-weight: 300;
+}
+
+footer .logo h2 span {
+  color: #06c167;
+  font-weight: 600;
+}
+
+footer ul.nobullets{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+footer ul a {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'FF Clan OT Book';
+}
+footer ul a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+footer hr { 
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: 'FF Clan OT Book';
+
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+
+}
+
+footer p {
+  color: white;
+  padding: 5vh;
+  font-family: 'FF Clan OT Book';
+}
+
+
+.login-container{
+  display: flex;
+ justify-content: center;
+ padding-top: 5rem;
+ padding-bottom: 3rem;
+}
+
+.form-center{
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.form-center input{
+  margin-top: 1rem;
+}
+.form-center button{
+  margin-top: 1rem;
+}
+
+.form-center p{
+  margin-top: 1rem;
+}
+
+.form-center a{
+  margin-top: 1rem;
+  color: #06c167;
+  text-decoration: none;
+}
+.form-center a:hover{
+  margin-top: 1rem;
+  color: #06c167;
+  text-decoration: underline;
+}
+
+
+
+.options {
+  padding: 1.2rem 0;
+}
+
+.options .options-btn {
+  background: #eeeeee;
+  padding: 0.8rem 1.2rem;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1rem;
+  letter-spacing: 0.6px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.options .options-btn svg {
+  max-width: 20px;
+  margin-right: 0.4rem;
+}
+
+.options .options-btn.selected {
+  background: black;
+  color: white;
+}
+
+.listings {
+  padding: 2rem 0;
+}
+
+.listings .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.listings .header .header-title h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.listings .header .header-title span {
+  color: #545454;
+}
+
+.listings .header .header-viewOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0 auto auto;
+}
+
+.listings .header .header-viewOptions .viewAll {
+  color: #06c167;
+  padding-right: 2rem;
+}
+
+.listings .header .header-viewOptions .viewMore .arrow {
+  background: #eeeeee;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.3;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.listings .header .header-viewOptions .viewMore .arrow.dark, .listings .header .header-viewOptions .viewMore .arrow:hover {
+  opacity: 1;
+}
+
+.listings .listings-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.listings .listings-grid .listings-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.listings .listings-grid .listings-grid-element {
+  width: calc(1 / 3 * 100% - (1 - 1 / 3) * 25px);
+  margin-top: 2rem;
+}
+
+.listings .listings-grid .listings-grid-element .image {
+  height: 240px;
+  overflow: hidden;
+}
+
+.listings .listings-grid .listings-grid-element .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.listings .listings-grid .listings-grid-element .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.listings .listings-grid .listings-grid-element .text h3 {
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+  margin-top: 0;
+}
+
+.listings .listings-grid .listings-grid-element .text span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #545454;
+}
+
+.listings .listings-grid .listings-grid-element .text .rating {
+  margin: auto 0 auto auto;
+  height: 100%;
+}
+
+.listings .listings-grid .listings-grid-element .text .rating span {
+  height: 40px;
+  height: 40px;
+  background: #eeeeee;
+  font-size: 1rem;
+  color: black;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */
